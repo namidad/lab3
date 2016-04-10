@@ -1,6 +1,6 @@
 #include "Slav.h"
 #include <fstream>
-
+#include <iterator>
 using namespace std;
 
 vector <string> Slav::names;
@@ -25,5 +25,5 @@ Slav::Slav()
 
 string Slav::description()
 {
-	return string("  ") + _name + " [" + to_string(_id) + "]";
+	return string("  ") + _name + " [" + to_string(_id) + "]" + " ";
 }
